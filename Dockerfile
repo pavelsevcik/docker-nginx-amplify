@@ -1,4 +1,6 @@
-FROM nginx:1.13
+ARG BASE_IMAGE=nginx:1.15.12
+FROM ${BASE_IMAGE}
+
 MAINTAINER NGINX Amplify Engineering
 
 # Install the NGINX Amplify Agent
